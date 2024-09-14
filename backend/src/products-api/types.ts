@@ -5,4 +5,5 @@ export type ConnectToDb = () => Promise<Mongoose>;
 export type ProductsFilter = {
   category?: string;
   name?: string;
+  id?: string;
 };

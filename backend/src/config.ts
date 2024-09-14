@@ -14,4 +14,4 @@ export const connectToDb: ConnectToDb = () => {
   );
 };
 
-export const SERVER_PORT = process.env.SERVER_PORT || 3001;
+export const SERVER_PORT = process.env.SERVER_PORT || 8080;

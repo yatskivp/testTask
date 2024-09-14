@@ -12,6 +12,9 @@ export const getProducts = async (req: Request, res: Response, next: NextFunctio
     if (req.query.name) {
       productsFilter.name = String(req.query.name);
     }
+    if (req.query.id) {
+      productsFilter.id = String(req.query.id);
+    }
 
     const products = await Products.find(productsFilter);
 
