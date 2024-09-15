@@ -17,7 +17,7 @@ export const productDetailsController = async (
       return res.json(cachedData);
     }
 
-    const productDetails = await getProducts({ id: productId });
+    const productDetails = await getProducts({id: productId});
     cacheClient.set(cacheKey, productDetails);
 
     res.json(productDetails);
