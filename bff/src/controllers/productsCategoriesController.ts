@@ -10,10 +10,11 @@ export const productsCategoriesController = async (
   try {
     const products = await getProducts();
 
-    res.json(
-     {data:  products.data ?
-      Array.from(new Set(products.data.map((product) => product.category))) : []}
-    );
+    res.json({
+      data: products.data
+        ? Array.from(new Set(products.data.map((product) => product.category)))
+        : [],
+    });
   } catch (error) {
     next(error);
   }

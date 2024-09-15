@@ -1,13 +1,14 @@
 import { Breadcrumbs, Typography } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
 import { constants } from '../../../constants';
+import { BreadCrumbsProps } from './breadCrumbs.types';
 
 const baseStyles = {
   textTransform: 'capitalize',
   color: constants.colors.primary,
 } as const;
 
-export const BreadCrumbs: React.FC = () => {
+export const BreadCrumbs: BreadCrumbsProps = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
 

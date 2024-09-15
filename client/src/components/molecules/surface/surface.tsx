@@ -1,8 +1,9 @@
 import { Card } from '@mui/material';
-import { PropsWithChildren } from 'react';
-import { BreadCrumbs } from '../breadCrumbs/breadCrumbs';
 
-export const Surface: React.FC<PropsWithChildren> = ({ children }) => {
+import { BreadCrumbs } from '../breadCrumbs/breadCrumbs';
+import { SurfaceProps } from './surface.types';
+
+export const Surface: SurfaceProps = ({ children }) => {
   return (
     <Card
       sx={{
