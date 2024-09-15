@@ -20,7 +20,7 @@ export const Products: ProductsProps = () => {
   } = useFetchProductsData();
 
   return (
-    <Surface>
+    <Surface withBreadcrumbs={false}>
       <Box
         sx={{
           width: '100%',

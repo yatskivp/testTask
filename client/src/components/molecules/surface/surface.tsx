@@ -3,7 +3,7 @@ import { Card } from '@mui/material';
 import { BreadCrumbs } from '../breadCrumbs/breadCrumbs';
 import { SurfaceProps } from './surface.types';
 
-export const Surface: SurfaceProps = ({ children }) => {
+export const Surface: SurfaceProps = ({ children, withBreadcrumbs = true }) => {
   return (
     <Card
       sx={{
@@ -13,7 +13,7 @@ export const Surface: SurfaceProps = ({ children }) => {
         overflowY: 'auto',
       }}
     >
-      <BreadCrumbs />
+      {withBreadcrumbs && <BreadCrumbs />}
       {children}
     </Card>
   );
