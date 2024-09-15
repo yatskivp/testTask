@@ -3,7 +3,6 @@ import { Application, Response, Request, NextFunction } from 'express';
 type ValidationError = { message: string; stack: string; status: number };
 
 export const errorsMiddleware = (app: Application) => {
-
   app.use(
     (
       err: ValidationError,

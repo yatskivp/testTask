@@ -2,8 +2,8 @@ import { fetch } from '../../../../utils/fetch';
 
 export const fetchProductDetails = async (id: string) => {
   const response = await fetch(
-    `/products`,
-    [{ key: 'id', value: id }],
+    `/products/${id}`,
+    [],
     'Error fetching product details',
   );
 
