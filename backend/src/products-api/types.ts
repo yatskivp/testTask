@@ -4,6 +4,6 @@ export type ConnectToDb = () => Promise<Mongoose>;
 
 export type ProductsFilter = {
   category?: string;
-  name?: string;
+  name?: { $regex: string; $options: string };
   id?: string;
 };
