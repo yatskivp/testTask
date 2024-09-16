@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "nodemon --exec node --loader ts-node/esm src/app.ts",
+    "dev": "nodemon --exec node --loader ts-node/esm src/index.ts",
     "lint": "eslint src/",
     "format": "prettier --write .",
-    "lint:fix": "eslint src/ --fix"
+    "lint:fix": "eslint src/ --fix",
+    "start": "node --loader ts-node/esm src/index.ts"
   },
   "author": "",
   "license": "ISC",

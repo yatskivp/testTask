@@ -19,7 +19,7 @@ export const useFetchData = <TData>(fetchCb: () => Promise<TData[]>) => {
   }, [fetchCb]);
 
   return {
-    data,
+    data: data || [],
     error,
     isLoading,
   };

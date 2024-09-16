@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useFetchProductDetailsData } from './hooks/useFetchProductDetailsData';
 import { Surface } from '../../molecules/surface/surface';
-import { RenderingManager } from '../../molecules/renderingManager/renderingManager';
 import {
   Box,
   CardContent,
@@ -15,6 +14,7 @@ import {
   Typography,
 } from '@mui/material';
 import { constants } from '../../../constants';
+import { RenderingManager } from '../renderingManager/renderingManager';
 
 export const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();

@@ -1,6 +1,7 @@
-import { EmptyDataScreen } from '../../atoms/emptyDataScreen/emptyDataScreen';
-import { ErrorScreen } from '../../atoms/errorScreen/errorScreen';
-import { LoadingScreen } from '../../atoms/loadingScreen/loadingScreen';
+
+import { EmptyDataScreen } from '../../organisms/emptyDataScreen/emptyDataScreen';
+import { ErrorScreen } from '../../organisms/errorScreen/errorScreen';
+import { LoadingScreen } from '../../organisms/loadingScreen/loadingScreen';
 import { RenderingManagerProps } from './renderingManager.types';
 
 export const RenderingManager: RenderingManagerProps = ({

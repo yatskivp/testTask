@@ -5,8 +5,8 @@ import { ProductsProps } from './products.types';
 import { constants } from '../../../constants';
 import { QuickSearch } from '../../molecules/quickSearch/quickSearch';
 import { useFetchProductsData } from './hooks/useFetchProductsData';
-import { RenderingManager } from '../../molecules/renderingManager/renderingManager';
 import { Surface } from '../../molecules/surface/surface';
+import { RenderingManager } from '../renderingManager/renderingManager';
 
 export const Products: ProductsProps = () => {
   const {

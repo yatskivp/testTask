@@ -14,6 +14,6 @@
     "noEmit": true, // Do not emit outputs
     "allowImportingTsExtensions": true // Allow importing modules with .ts extensions
   },
-  "include": ["src/**/*.ts", "src/app.ts"], // Specify the files to be included in the compilation
+  "include": ["src/**/*.ts", "src/index.ts"], // Specify the files to be included in the compilation
   "exclude": ["node_modules", "**/*.spec.ts"] // Specify the files to be excluded from the compilation
 }
