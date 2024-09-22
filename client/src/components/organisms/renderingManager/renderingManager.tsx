@@ -1,4 +1,3 @@
-
 import { EmptyDataScreen } from '../../organisms/emptyDataScreen/emptyDataScreen';
 import { ErrorScreen } from '../../organisms/errorScreen/errorScreen';
 import { LoadingScreen } from '../../organisms/loadingScreen/loadingScreen';

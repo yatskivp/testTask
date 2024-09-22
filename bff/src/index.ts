@@ -15,6 +15,8 @@ app.use('/', router);
 
 notFoundMiddleware(app);
 
-app.listen(BFF_PORT, () => {
+const server = app.listen(BFF_PORT, () => {
   console.log(`Server is running on port ${BFF_PORT}`);
 });
+
+export default server;

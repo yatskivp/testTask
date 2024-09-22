@@ -15,5 +15,5 @@
     "allowImportingTsExtensions": true // Allow importing modules with .ts extensions
   },
   "include": ["src/**/*.ts", "src/index.ts"], // Specify the files to be included in the compilation
-  "exclude": ["node_modules", "**/*.spec.ts"] // Specify the files to be excluded from the compilation
+  "exclude": ["node_modules", "**/*.test.ts"] // Specify the files to be excluded from the compilation
 }

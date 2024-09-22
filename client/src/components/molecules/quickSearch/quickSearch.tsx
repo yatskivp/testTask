@@ -21,12 +21,12 @@ export const QuickSearch: QuickSearchProps = ({
 
   return (
     <FormControl fullWidth variant="standard">
-      <InputLabel id="select-label">{selectLabel}</InputLabel>
+      <InputLabel id="quick-search-select-label">{selectLabel}</InputLabel>
       <Box sx={{ display: 'flex' }}>
         <Select
           sx={{ width: '100%' }}
-          labelId="select-label"
-          id="select-label"
+          labelId="quick-search-select-label"
+          id="quick-search-select"
           value={selectedValue}
           onChange={(event) => handleSelectChange(event.target.value as string)}
         >
@@ -37,7 +37,7 @@ export const QuickSearch: QuickSearchProps = ({
           ))}
         </Select>
         <TextField
-          id="filter-input"
+          id="quick-search-filter-input"
           label={filterInputLabel}
           variant="standard"
           sx={{ width: '100%' }}
